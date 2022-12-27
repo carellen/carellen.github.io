@@ -8,7 +8,17 @@
           period: 'May 2021 - Present',
           project: 'Amped Studio (https://ampedstudio.com/)',
           description: 'Application for music creators.',
-          stack: 'Ruby On Rails 6.1.3.1, Vue.js, Hotwire, TailwindCSS, PostgreSQL, Docker, AWS'
+          stack: 'Ruby On Rails 6.1.3.1, Vue.js, Hotwire, TailwindCSS, PostgreSQL, Docker, AWS',
+          duties: [
+            'Site performance optimization using pagespeed.web.dev, Google Search Console (from 50% to 99%)',
+            'Frontend refactoring (Vue.js -> rails views, Webpack -> Esbuild',
+            'Infrastructure optimization (AWS EB -> ECS, Cloudfront, WAF)',
+            'File uploading improvements (carrierwave -> shrine)',
+            'Payment system integration (Stripe session, Google Pay)',
+            'C2C integration using Stripe Connect',
+            'Subscription monitoring and management',
+            'Setup and support several domains'
+          ]
         },
         {
           position: 'Founder',

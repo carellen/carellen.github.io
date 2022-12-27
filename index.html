@@ -107,6 +107,25 @@
                     <span class="font-semibold">Stack:</span>
                     <span x-text="job.stack"></span>
                   </div>
+                  <div class="flex flex-col" x-data="{ open: false }">
+                    <div class="flex p-1 ml-3 text-zinc-400 hover:text-zinc-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" :class="open ? 'hidden' : ''" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" :class="open ? '' : 'hidden'" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" />
+                      </svg>
+                      <button x-on:click="open = !open">Job details</button>
+                    </div>
+                    <div :class="open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'" class="grid overflow-hidden transition-all duration-500">
+                      <ul class="min-h-0 list-disc pl-8">
+                        <template x-for="duty in job.duties">
+                          <li class="text-zinc-600" x-text="duty"></li>
+                        </template>
+                      </ul>
+                    </div>
+
+                  </div>
                 </div>
               </template>
             </div>
