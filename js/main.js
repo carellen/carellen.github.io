@@ -3,11 +3,24 @@
     Alpine.store('data', {
       experience: [
         {
+          position: 'Full-stack developer',
+          company: 'Share Hive',
+          period: 'March 2023 - Present',
+          project: 'CrosswordSolver (https://crossword-solver.io/), RouterNetwork (https://router-network.com/)',
+          description: 'Websites for word-games enthusiasts',
+          stack: 'Ruby On Rails ~6, SvelteKit.js, TailwindCSS, PostgreSQL, Heroku, Cloudflare',
+          duties: [
+            'ADS integration',
+            'Infrastructure support (Heroku, Cloudflare)',
+            'Various Frontend and backend tasks'
+          ]
+        },
+        {
           position: 'Ruby on Rails full-stack developer, DevOps',
           company: 'Amptrack Technologies AB',
-          period: 'May 2021 - Present',
+          period: 'May 2021 - Feb 2023',
           project: 'Amped Studio (https://ampedstudio.com/)',
-          description: 'Application for music creators.',
+          description: 'Application for music creators',
           stack: 'Ruby On Rails 6.1.3.1, Vue.js, Hotwire, TailwindCSS, PostgreSQL, Docker, AWS',
           duties: [
             'Site performance optimization using pagespeed.web.dev, Google Search Console (from 50% to 99%)',
@@ -27,13 +40,13 @@
           position: 'Founder',
           company: 'Self-Employed',
           period: 'Sep 2022 - Oct 2022',
-          project: 'Meal Calendar (http://meal-calendar.com/)',
+          project: 'Meal Calendar (https://meal-calendar.com/)',
           description: '(STARTUP) Application for scheduling your menu.',
           stack: 'Rails 7, Hotwire, Stimulus, TailwindCSS, AWS.',
           duties: [
             'Setup domain and deployment process',
             'Design and business logic development',
-            'Launch, monitoring, and respect from my wife:)'
+            'Launch, monitoring, and getting respect from my wife:)'
           ]
         },
         {
